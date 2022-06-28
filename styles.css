@@ -239,6 +239,59 @@ nav a.icon {
   background-color: #e2e2e2;
 }
 
+#contacts {
+  background-color: #f1f1f1;
+  padding: 100px 0;
+}
+#contacts .about-img {
+  width: 300px;
+  border-radius: 30%;
+}
+#contacts .skill-list {
+  flex: 1;
+}
+.contact-item {
+  width: 50%;
+  margin: 10px 0;
+}
+
+.contact-item i {
+  margin-right: 10px;
+}
+
+footer {
+  background-position: bottom;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(./images/Bournemouth.jpg);
+  color: #fff;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.copyright {
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+
+.copyright a {
+  font-size: 16px;
+  color: #ffbe0b;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.sm a {
+  color: #fff;
+  font-size: 22px;
+  margin: 0 10px;
+  transition: 0.2s linear;
+  text-decoration: none;
+}
+
+.sm a:hover {
+  color: #ffbe0b;
+}
+
 .projects {
   display: flex;
   justify-content: space-between;
