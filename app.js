@@ -23,3 +23,18 @@ function toggle() {
     x.style.display = "block";
   }
 }
+
+const div = document.getElementById('myLinks');
+
+div.addEventListener('click', myFunction)
+
+function myFunction(e) {
+ 
+  if((div.style.display === '' || div.style.display === 'none')) {
+    div.style.display = 'block';    
+  } else if((div.style.display === '' || div.style.display === 'none') ) {
+    div.style.display = 'none';
+  } else {
+    div.style.display = 'none';
+  }
+}

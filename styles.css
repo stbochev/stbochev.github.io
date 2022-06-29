@@ -184,12 +184,13 @@ nav a.icon {
   bottom: -7px;
 }
 .about-content {
-  display: block;
+  display: flex;
   flex-wrap: wrap;
   align-items: center;
 }
 .about-text {
   flex: 1;
+  display: contents;
 }
 .about-img {
   width: 200px;
@@ -247,16 +248,26 @@ nav a.icon {
   width: 300px;
   border-radius: 30%;
 }
-#contacts .skill-list {
-  flex: 1;
-}
 .contact-item {
-  width: 50%;
+  width: 100%;
   margin: 10px 0;
+  color: #023047;
+  font-weight: 700;
 }
 
 .contact-item i {
   margin-right: 10px;
+}
+
+.contact-item a {
+  text-decoration: none;
+  color: #023047;
+  font-weight: 700;
+  transition: 200ms linear;
+}
+
+.contact-item a:hover {
+  color: rgb(255, 183, 3);
 }
 
 footer {
@@ -392,7 +403,11 @@ li a {
   text-decoration: none;
   transition: 200ms linear;
 }
-nav li a:hover {
+nav li a:hover,
+:focus {
+  color: rgb(255, 183, 3);
+}
+nav li a:focus {
   color: rgb(255, 183, 3);
 }
 .parallax {
@@ -492,6 +507,9 @@ nav li a:hover {
 }
 
 @media screen and (min-width: 700px) {
+  .about-text {
+    display: block;
+  }
   .fluid-div {
     display: flex;
   }
@@ -517,6 +535,9 @@ nav li a:hover {
   .header-content h1 {
     font-size: 3em;
     letter-spacing: 8px;
+  }
+  #contacts .skill-list {
+    flex: 1;
   }
 }
 @media screen and (min-width: 1000px) {
@@ -562,10 +583,17 @@ nav li a:hover {
   .description {
     height: 240px;
   }
+  .contact-item {
+    width: 50%;
+  }
 }
 
 @media screen and (max-width: 450px) {
+  #contacts .about-img {
+    width: 100%;
+  }
   .about-img {
+    width: 100%;
     float: none;
     margin-right: 0;
   }
